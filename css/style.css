@@ -1,0 +1,161 @@
+body > .wrapper{
+    width: 1100px;
+    text-align: center;
+}
+
+.box1{
+    display: block;
+    width: 400px;
+    height: 400px;
+    background-color: #ff0000;
+}
+
+.box2{
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: #ff0000;
+}
+
+.q1{
+    margin: auto;
+}
+
+.q2{
+    background-color: #ff0000;
+}
+
+.q3, .q5, .q7{
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.q3 .box2:first-child{
+    margin-right: 150px;
+    background-color: #0008ff;
+}
+.q3 .box2:last-child{
+    background-color: #22ff00;
+}
+
+.q4{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.q4 .wrapper{
+    display: inline-block;
+}
+
+.q4 .box2{
+    float:left;
+}
+
+.q4 .box2:last-child{
+    background-color: #0008ff;
+}
+
+.q5 .box2:nth-child(1){
+    background-color: #ff0000;
+}
+
+.q5 .box2:nth-child(2){
+    background-color: #0008ff;
+}
+
+.q5 .box2:nth-child(3){
+    background-color: #ff8400;
+}
+
+.q6{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.q6 .box2:nth-child(1){
+    background-color: #00ff51;
+}
+
+.q6 .box2:nth-child(2){
+    background-color: #d4ff00;
+}
+
+.q6 .box2:nth-child(3){
+    background-color: #ff00a1;
+}
+
+.q7_a{
+    background-color: #ff0000;
+}
+
+.q7_b{
+    display: none;
+    background-color: #0008ff;
+}
+
+.q7_c{
+    background-color: #00ff51;
+}
+@media screen and (max-width:960px){
+
+    .q1{
+        width: 200px;
+        height: 200px;
+    }
+
+    .q2{
+        background-color: #007bff;
+    }
+
+    .q3 .box2:first-child{
+        margin-right: 50px;
+        background-color: #0008ff;
+    }
+
+    .q4 .box2{
+        float: none;
+    }
+
+    .q5{
+        flex-direction: row-reverse;
+    }
+
+    .q6 .box2:nth-child(3){
+        order: 1;
+    }
+
+    .q6 .box2:nth-child(1){
+        order: 2;
+    }
+
+    .q6 .box2:nth-child(2){
+        order: 3;
+    }
+
+    .q7_a{
+        display: none;
+        background-color: #ff0000;
+    }
+
+    .q7_b{
+        display: block;
+        background-color: #0008ff;
+    }
+
+    .q7_c{
+        background-color: #00ff51;
+    }
+}
+
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
